@@ -194,4 +194,4 @@ LM=$(curl -s -o /dev/null -D - "$ORIGIN_URL" | awk -F': ' 'tolower($1)=="last-mo
 curl -s -o /dev/null -D - -H "If-Modified-Since: $LM" "$ORIGIN_URL"   # 304 must include Cache-Control
 ```
 
-*A companion script that automates the cold/warm probe, per-variant parity audit, snapshot-age detection, and browser-cacheability verdicts across CDN and origin tiers lives in this repo.*
+
